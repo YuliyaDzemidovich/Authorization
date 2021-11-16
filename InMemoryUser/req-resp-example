@@ -1,0 +1,21 @@
+# first request
+curl -u yuliya:12345 http://localhost:8080/app/hello
+
+# further requests
+curl --location --request GET 'localhost:8080/app/hello' \
+--header 'Cookie: JSESSIONID=A24BEE5454E5111D771B3035DE69EB4F'
+
+# response
+< HTTP/1.1 200
+< Set-Cookie: JSESSIONID=9A9E59A69125E138E70B94818062B7CE; Path=/app; HttpOnly
+< X-Content-Type-Options: nosniff
+< X-XSS-Protection: 1; mode=block
+< Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+< Pragma: no-cache
+< Expires: 0
+< X-Frame-Options: DENY
+< Content-Type: text/plain;charset=UTF-8
+< Content-Length: 6
+< Date: Tue, 16 Nov 2021 23:05:55 GMT
+<
+Hello!* Connection #0 to host localhost left intact
