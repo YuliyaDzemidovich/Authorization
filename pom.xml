@@ -17,12 +17,13 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>InMemoryUser</module>
+        <module>JdbcUser</module>
     </modules>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
+            <artifactId>spring-boot-starter-com.security</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -45,8 +46,8 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-test</artifactId>
+            <groupId>org.springframework.com.security</groupId>
+            <artifactId>spring-com.security-test</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>

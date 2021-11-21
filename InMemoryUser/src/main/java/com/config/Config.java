@@ -1,4 +1,4 @@
-package config;
+package com.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -7,7 +7,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import security.InMemoryUserDetailsService;
+import com.security.InMemoryUserDetailsService;
 
 import java.util.ArrayList;
 import java.util.List;
