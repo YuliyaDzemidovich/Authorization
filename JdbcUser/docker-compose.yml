@@ -6,7 +6,7 @@ services:
     image: mysql:8.0
     restart: always
     environment:
-      MYSQL_DATABASE: 'db'
+      MYSQL_DATABASE: 'spring'
       MYSQL_USER: 'user'
       MYSQL_PASSWORD: 'password'
       MYSQL_ROOT_PASSWORD: 'root'
@@ -20,4 +20,4 @@ services:
     image: adminer
     restart: always
     ports:
-      - 8180:8080
+      - '8180:8080'
