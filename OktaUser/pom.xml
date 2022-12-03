@@ -9,16 +9,14 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>JdbcUser</artifactId>
+    <artifactId>OktaUser</artifactId>
+
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.okta.spring/okta-spring-boot-starter -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-jdbc</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <scope>runtime</scope>
+            <groupId>com.okta.spring</groupId>
+            <artifactId>okta-spring-boot-starter</artifactId>
+            <version>2.1.6</version>
         </dependency>
     </dependencies>
 
